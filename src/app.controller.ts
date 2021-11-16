@@ -30,6 +30,12 @@ export class AppController {
     return response.redirect(join);
   }
 
+  @Get('/weekly')
+  getWeekly(@Res() response: Response): void {
+    const { weekly } = this.appService.getExternalRoutes();
+    return response.redirect(weekly);
+  }
+
   @Get('/request')
   getTypeformRequest(@Res() response: Response): void {
     const { request } = this.appService.getExternalRoutes();

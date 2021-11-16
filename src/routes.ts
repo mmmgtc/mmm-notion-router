@@ -4,4 +4,5 @@ export const routes = {
   join: 'https://form.typeform.com/to/YuA2wHkg',
   request: 'https://form.typeform.com/to/iM5lAFFD',
   home: 'https://gitcoin.notion.site/Memes-Merch-Marketing-c1bd89fac8ab4569bf2a676df28025d8',
+  weekly: 'https://meet.google.com/ffs-ubtu-nfi',
 };
