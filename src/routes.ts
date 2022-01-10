@@ -5,4 +5,8 @@ export const routes = {
   request: 'https://form.typeform.com/to/iM5lAFFD',
   home: 'https://gitcoin.notion.site/Memes-Merch-Marketing-60cc693f0fe14be1879a05587922c8a3',
   weekly: 'https://meet.google.com/ffs-ubtu-nfi',
+  design: 'https://gitcoin.notion.site/MMM-Design-7eb5721fe689419098b1029270da68c2',
+  dev: 'https://gitcoin.notion.site/MMM-Development-c7965c015cee4cf1b7d6103cf3287ca6',
+  raids: 'https://gitcoin.notion.site/MMM-Raids-17b9a30b761b4b369763a4598e7430a0',
+  figma: 'https://www.figma.com/file/lIsd28yrR1neIALFuqw8Rh/?node-id=1%3A4177',
 };

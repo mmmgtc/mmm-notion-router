@@ -41,4 +41,28 @@ export class AppController {
     const { request } = this.appService.getExternalRoutes();
     return response.redirect(request);
   }
+  
+  @Get('/design')
+  getDesign(@Res() response: Response): void {
+    const { design } = this.appService.getExternalRoutes();
+    return response.redirect(design);
+  }
+
+  @Get('/dev')
+  getDev(@Res() response: Response): void {
+    const { dev } = this.appService.getExternalRoutes();
+    return response.redirect(dev);
+  }
+
+  @Get('/raids')
+  getRaids(@Res() response: Response): void {
+    const { raids } = this.appService.getExternalRoutes();
+    return response.redirect(raids);
+  }
+
+  @Get('/figma')
+  getFigma(@Res() response: Response): void {
+    const { figma } = this.appService.getExternalRoutes();
+    return response.redirect(figma);
+  }
 }
