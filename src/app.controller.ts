@@ -42,6 +42,22 @@ export class AppController {
     return response.redirect(request);
   }
   
+  @Get('/weekly/design')
+  getWeeklyDesign(@Res() response: Response): void {
+    const { weeklyDesign } = this.appService.getExternalRoutes();
+    return response.redirect(weeklyDesign);
+  }
+  @Get('/weekly/sync')
+  getWeeklySync(@Res() response: Response): void {
+    const { weeklySync } = this.appService.getExternalRoutes();
+    return response.redirect(weeklySync);
+  }
+  @Get('/weekly/officehours')
+  getWeeklyOfficeHours(@Res() response: Response): void {
+    const { officeHours } = this.appService.getExternalRoutes();
+    return response.redirect(officeHours);
+  }
+
   @Get('/design')
   getDesign(@Res() response: Response): void {
     const { design } = this.appService.getExternalRoutes();
@@ -65,4 +81,5 @@ export class AppController {
     const { figma } = this.appService.getExternalRoutes();
     return response.redirect(figma);
   }
+
 }

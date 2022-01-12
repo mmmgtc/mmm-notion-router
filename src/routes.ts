@@ -9,4 +9,7 @@ export const routes = {
   dev: 'https://gitcoin.notion.site/MMM-Development-c7965c015cee4cf1b7d6103cf3287ca6',
   raids: 'https://gitcoin.notion.site/MMM-Raids-17b9a30b761b4b369763a4598e7430a0',
   figma: 'https://www.figma.com/file/lIsd28yrR1neIALFuqw8Rh/?node-id=1%3A4177',
+  weeklyDesign: 'https://discord.gg/2GnDxHYkcz',
+  weeklySync: 'https://discord.gg/2GnDxHYkcz',
+  officeHours : 'https://discord.gg/2GnDxHYkcz',
 };
