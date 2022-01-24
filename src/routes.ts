@@ -8,6 +8,8 @@ export const routes = {
   design: 'https://gitcoin.notion.site/MMM-Design-7eb5721fe689419098b1029270da68c2',
   dev: 'https://gitcoin.notion.site/MMM-Development-c7965c015cee4cf1b7d6103cf3287ca6',
   raids: 'https://gitcoin.notion.site/MMM-Raids-17b9a30b761b4b369763a4598e7430a0',
+  raidForm: 'https://form.typeform.com/to/VBYPZmjY',
+  ideaForm: 'https://form.typeform.com/to/hxoD7TKR',
   figma: 'https://www.figma.com/file/lIsd28yrR1neIALFuqw8Rh/?node-id=1%3A4177',
   weeklyDesign: 'https://discord.gg/2GnDxHYkcz',
   weeklySync: 'https://discord.gg/2GnDxHYkcz',

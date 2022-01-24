@@ -76,6 +76,18 @@ export class AppController {
     return response.redirect(raids);
   }
 
+  @Get('/raid')
+  getRaidForm(@Res() response: Response): void {
+    const { raidForm } = this.appService.getExternalRoutes();
+    return response.redirect(raidForm);
+  }
+
+  @Get('/idea')
+  getIdeaForm(@Res() response: Response): void {
+    const { ideaForm } = this.appService.getExternalRoutes();
+    return response.redirect(ideaForm);
+  }
+
   @Get('/figma')
   getFigma(@Res() response: Response): void {
     const { figma } = this.appService.getExternalRoutes();
