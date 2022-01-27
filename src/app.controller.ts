@@ -6,7 +6,7 @@ import { AppService } from './app.service';
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get()
+  @Get("/")
   getDefault(@Res() response: Response): void {
     const { home } = this.appService.getExternalRoutes();
     return response.redirect(home);
@@ -70,22 +70,22 @@ export class AppController {
     return response.redirect(dev);
   }
 
-  @Get('/raids')
-  getRaids(@Res() response: Response): void {
-    const { raids } = this.appService.getExternalRoutes();
-    return response.redirect(raids);
+  @Get('/idea')
+  getIdeaForm(@Res() response: Response): void {
+    const { ideaForm } = this.appService.getExternalRoutes();
+    return response.redirect(ideaForm);
   }
-
+  
   @Get('/raid')
   getRaidForm(@Res() response: Response): void {
     const { raidForm } = this.appService.getExternalRoutes();
     return response.redirect(raidForm);
   }
 
-  @Get('/idea')
-  getIdeaForm(@Res() response: Response): void {
-    const { ideaForm } = this.appService.getExternalRoutes();
-    return response.redirect(ideaForm);
+  @Get('/raids')
+  getRaids(@Res() response: Response): void {
+    const { raids } = this.appService.getExternalRoutes();
+    return response.redirect(raids);
   }
 
   @Get('/figma')
