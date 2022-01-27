@@ -2,11 +2,11 @@ import { Controller, Get, Res } from '@nestjs/common';
 import { Response } from 'express';
 import { AppService } from './app.service';
 
-@Controller()
+@Controller('/')
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
-  @Get("/")
+  @Get()
   getDefault(@Res() response: Response): void {
     const { home } = this.appService.getExternalRoutes();
     return response.redirect(home);
@@ -16,6 +16,18 @@ export class AppController {
   getHome(@Res() response: Response): void {
     const { home } = this.appService.getExternalRoutes();
     return response.redirect(home);
+  }
+
+  @Get('/raid')
+  getRaid(@Res() response: Response): void {
+    const { raid } = this.appService.getExternalRoutes();
+    return response.redirect(raid);
+  }
+
+  @Get('/idea')
+  getIdea(@Res() response: Response): void {
+    const { idea } = this.appService.getExternalRoutes();
+    return response.redirect(idea);
   }
 
   @Get('/memepalooza')
@@ -41,7 +53,7 @@ export class AppController {
     const { request } = this.appService.getExternalRoutes();
     return response.redirect(request);
   }
-  
+
   @Get('/weekly/design')
   getWeeklyDesign(@Res() response: Response): void {
     const { weeklyDesign } = this.appService.getExternalRoutes();
@@ -70,18 +82,6 @@ export class AppController {
     return response.redirect(dev);
   }
 
-  @Get('/idea')
-  getIdeaForm(@Res() response: Response): void {
-    const { ideaForm } = this.appService.getExternalRoutes();
-    return response.redirect(ideaForm);
-  }
-  
-  @Get('/raid')
-  getRaidForm(@Res() response: Response): void {
-    const { raidForm } = this.appService.getExternalRoutes();
-    return response.redirect(raidForm);
-  }
-
   @Get('/raids')
   getRaids(@Res() response: Response): void {
     const { raids } = this.appService.getExternalRoutes();
@@ -93,5 +93,4 @@ export class AppController {
     const { figma } = this.appService.getExternalRoutes();
     return response.redirect(figma);
   }
-
 }
