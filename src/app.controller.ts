@@ -30,6 +30,12 @@ export class AppController {
     return response.redirect(idea);
   }
 
+  @Get('/s13')
+  getS13(@Res() response: Response): void {
+    const { s13 } = this.appService.getExternalRoutes();
+    return response.redirect(s13);
+  }
+
   @Get('/memepalooza')
   getMemepalooza(@Res() response: Response): void {
     const { memepalooza } = this.appService.getExternalRoutes();
