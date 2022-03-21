@@ -17,4 +17,5 @@ export const routes = {
   weeklySync: 'https://discord.gg/2GnDxHYkcz',
   officeHours: 'https://discord.gg/2GnDxHYkcz',
   s13: 'https://gov.gitcoin.co/t/proposal-mmm-season-13-budget-request/9818',
+  dework: 'https://app.dework.xyz/o/gitcoin-mmm-2y8lJLydkT9XgKIOMazgCs',
 };
