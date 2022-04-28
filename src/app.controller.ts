@@ -42,6 +42,12 @@ export class AppController {
     return response.redirect(s13);
   }
 
+  @Get('/s14')
+  getS14(@Res() response: Response): void {
+    const { s14 } = this.appService.getExternalRoutes();
+    return response.redirect(s14);
+  }
+
   @Get('/memepalooza')
   getMemepalooza(@Res() response: Response): void {
     const { memepalooza } = this.appService.getExternalRoutes();
