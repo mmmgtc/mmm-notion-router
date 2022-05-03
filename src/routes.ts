@@ -18,5 +18,7 @@ export const routes = {
   officeHours: 'https://discord.gg/2GnDxHYkcz',
   s13: 'https://gov.gitcoin.co/t/proposal-mmm-season-13-budget-request/9818',
   s14: 'https://gov.gitcoin.co/t/proposal-mmm-season-14-budget-request/10440',
+  calendar:
+    'https://calendar.google.com/calendar/embed?src=c_8abngkacovr6t4jgqvkedbino0%40group.calendar.google.com&ctz=Europe%2FStockholm',
   dework: 'https://app.dework.xyz/o/gitcoin-mmm-2y8lJLydkT9XgKIOMazgCs',
 };

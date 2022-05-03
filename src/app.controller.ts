@@ -48,6 +48,12 @@ export class AppController {
     return response.redirect(s14);
   }
 
+  @Get('/calendar')
+  getCalendar(@Res() response: Response): void {
+    const { calendar } = this.appService.getExternalRoutes();
+    return response.redirect(calendar);
+  }
+
   @Get('/memepalooza')
   getMemepalooza(@Res() response: Response): void {
     const { memepalooza } = this.appService.getExternalRoutes();
